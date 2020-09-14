@@ -2,10 +2,17 @@ package main
 
 import "fmt"
 
-func Oi(nome string) string {
-	return "Deu bom, " + nome + "?"
+func Hello(name string) string {
+	if(name == "") {
+		const portugueseSolo = "Deu bom?"
+		return portugueseSolo
+	}
+
+	
+	const portuguesePrefix = "Deu bom, "
+	return portuguesePrefix + name + "?"
 }
 
 func main() {
-	fmt.Println(Oi(""))
+	fmt.Println(Hello(""))
 }
