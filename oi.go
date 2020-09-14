@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-func Oi() string {
-	return "Deu bom?"
+func Oi(nome string) string {
+	return "Deu bom, " + nome + "?"
 }
 
 func main() {
-	fmt.Println(Oi())
+	fmt.Println(Oi(""))
 }
