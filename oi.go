@@ -17,6 +17,12 @@ func Hello(name, language string) string {
 		return portugueseSolo
 	}
 	
+	
+	return getPrefix(language) + name
+}
+
+func getPrefix(language string) string {
+	
 	prefix := portuguesePrefix
 
 	switch language {
@@ -25,8 +31,8 @@ func Hello(name, language string) string {
 		case frenchLanguage:
 			prefix = frenchPrefix
 	}
-	
-	return prefix + name
+
+	return prefix
 }
 
 func main() {
